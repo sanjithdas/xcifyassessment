@@ -1,0 +1,155 @@
+.sga-input-icon-group > input:-webkit-autofill,
+.sga-input-icon-group > input:-webkit-autofill:hover,
+.sga-input-icon-group > input:-webkit-autofill:focus,
+.sga-input-icon-group > select:-webkit-autofill,
+.sga-input-icon-group > select:-webkit-autofill:hover,
+.sga-input-icon-group > select:-webkit-autofill:focus {
+    font-size: 1rem; /* Needed to be duplicate in Firefox as firefox doesn't allow combination of input with -webkit */
+    line-height: 1.2;
+    outline: none;
+    border: none;
+    color: #222;
+    background-color: transparent !important;
+    -webkit-text-fill-color: #aa0;
+    -webkit-box-shadow: 0 0 0 0 #000 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.sga-input-icon-group {
+    position: relative;
+    width: 100%;
+    height: 3.2rem;
+    border: 1px solid #222;
+    border-radius: 0.25rem;
+    background-color: #f9f9f9;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+    .sga-input-icon-group > input,
+    .sga-input-icon-group > select {
+        position: absolute;
+        width: calc(100% - 5.4rem);
+        height: 100%;
+        top: 0;
+        left: 4.4rem;
+        right: 0;
+        bottom: 0;
+        font-size: 1rem;
+        line-height: 1.2;
+        outline: none;
+        outline-width: 0;
+        border: none;
+        color: #333;
+        background-color: transparent;
+        display: block;
+    }
+
+        .sga-input-icon-group > input[data-useflex],
+        .sga-input-icon-group > select[data-useflex] {
+            position: relative;
+            left: 0;
+            margin-left: 4.4rem;
+            flex-grow: 1;
+            -ms-flex-positive: 1;
+        }
+
+    .sga-input-icon-group > select {
+        padding: 0 1.5rem 0 0;
+    }
+
+        .sga-input-icon-group > select:invalid {
+            color: #888;
+            padding: 0;
+            box-shadow: none;
+        }
+
+        .sga-input-icon-group > select option {
+            padding: 1rem 0;
+        }
+
+        .sga-input-icon-group > input + span,
+        .sga-input-icon-group > select + span {
+            margin: auto 1rem auto 0;
+            line-height: 1.2;
+            display: block;
+        }
+
+    .sga-input-icon-group > span {
+        margin: auto 0 auto 4.4rem;
+        font-size: 1rem;
+        line-height: 1.2;
+        color: #333;
+        cursor: default;
+        display: block;
+    }
+
+        .sga-input-icon-group > span + input,
+        .sga-input-icon-group > span + select {
+            position: relative;
+            left: 0;
+            margin-left: 0.35rem;
+            flex-grow: 1;
+            -ms-flex-positive: 1;
+        }
+
+    .sga-input-icon-group:before {
+        position: absolute;
+        width: 3.4rem;
+        height: 2rem;
+        line-height: 2rem;
+        top: 0.6rem;
+        bottom: 0.6rem;
+        left: 0;
+        font-family: 'Font Awesome 5 Free';
+        font-size: 1rem;
+        font-weight: 600;
+        content: attr(data-icon);
+        text-align: center;
+        pointer-events: none;
+        border-right: 1px solid #222;
+    }
+
+    .sga-input-icon-group.error {
+        background-color: #ffefef;
+        border-color: #faa;
+    }
+
+        .sga-input-icon-group.error:before {
+            color: #f88;
+            border-color: #faa;
+        }
+
+        .sga-input-icon-group.error > input::placeholder {
+            color: #f88;
+        }
+
+        .sga-input-icon-group.error > input:-ms-input-placeholder {
+            color: #f88;
+        }
+
+        .sga-input-icon-group.error > input::-ms-input-placeholder {
+            color: #f88;
+        }
+
+        .sga-input-icon-group.error > select:invalid {
+            color: #f88;
+        }
+
+.sga-input-icon-group.disabled {
+    color: #888;
+    border-color: #aaa;
+ }
+
+    .sga-input-icon-group.disabled > input,
+    .sga-input-icon-group.disabled > select {
+        color: #888;
+    }
+
+    .sga-input-icon-group.disabled:before {
+        border-color: #aaa;
+    }

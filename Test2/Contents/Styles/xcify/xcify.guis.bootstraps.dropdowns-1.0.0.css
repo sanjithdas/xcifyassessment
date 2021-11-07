@@ -1,0 +1,16 @@
+.dropdown.no-arrow > a {
+    text-decoration: none;
+}
+
+.dropdown.no-arrow > .dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-item > i {
+    min-width: 20px;
+}
+
+.dropdown-item > i + span {
+    display: inline-block;
+    margin-left: 1rem;
+}

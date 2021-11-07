@@ -1,0 +1,13 @@
+﻿body .btn.btn-robotic {
+    border-radius: 50rem;
+}
+
+body .modal .modal-footer {
+    -ms-flex-pack: center !important;
+    justify-content: center;
+}
+
+    body .modal .modal-footer .btn.btn-primary {
+        -ms-flex-pack: center !important;
+        justify-content: center;
+    }

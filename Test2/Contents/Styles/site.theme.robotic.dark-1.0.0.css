@@ -1,0 +1,132 @@
+﻿body {
+  color: rgb(19, 18, 18);
+  background-color: #fff;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar,
+body div::-webkit-scrollbar,
+body select::-webkit-scrollbar,
+body textarea::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-corner,
+body div::-webkit-scrollbar-corner,
+body select::-webkit-scrollbar-corner,
+body textarea::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 255, 0.2);
+}
+
+body::-webkit-scrollbar-track,
+body div::-webkit-scrollbar-track,
+body select::-webkit-scrollbar-track,
+body textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #0d0e10;
+}
+
+body::-webkit-scrollbar-thumb,
+body div::-webkit-scrollbar-thumb,
+body select::-webkit-scrollbar-thumb,
+body textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #6c6c6c;
+}
+
+body hr {
+  color: #888;
+  background-color: #888;
+}
+
+body label.disabled {
+  color: #999;
+}
+
+body select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23AAA' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+}
+
+body textarea {
+  color: #ddd;
+  border-color: #53575c;
+  background-color: #0d0e10;
+}
+
+body .form-control {
+  color: #bbb;
+  background-color: #0d0e10;
+  border: 1px solid #53575c;
+}
+
+body .form-control:focus {
+  color: #fff;
+  background-color: #0d0e10;
+  border-color: #d0b580;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(208, 181, 128, 0.25);
+}
+
+body .badge.red {
+  color: #fff;
+  background-color: #f00414;
+}
+
+body .badge.green {
+  color: #fff;
+  background-color: #1fbf00;
+}
+
+.dropdown.lang > a {
+  color: #fff;
+}
+
+.errmsg {
+  color: #f88;
+}
+
+.footer {
+  background-color: #2f86a6;
+}
+
+.footer > .container > .row > div {
+  color: #fff;
+}
+
+.footer > .container > .row.provider > div > span {
+  color: #fff;
+}
+
+.main-menu {
+  background-color: #2f86a6;
+}
+
+.main-menu ul > li > a > p {
+  color: #f8f9fa;
+  text-transform: uppercase;
+}
+
+.top-menu {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.top-menu > .row > div > a {
+  color: #f8f9fa;
+}
+
+.top-menu > .row > div > a:hover,
+.top-menu > .row > div > a:focus {
+  color: #f9fafb;
+}
+
+.top-menu > .row > div > a > p:first-child {
+  background: #0d0e10;
+}
+
+.top-menu > .row > div > a > p:first-child:hover {
+  background: #222529;
+  transition: 0.5s;
+}

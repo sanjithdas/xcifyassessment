@@ -1,0 +1,65 @@
+body .sga-input-icon-group > input:-webkit-autofill,
+body .sga-input-icon-group > input:-webkit-autofill:hover,
+body .sga-input-icon-group > input:-webkit-autofill:focus,
+body .sga-input-icon-group > select:-webkit-autofill,
+body .sga-input-icon-group > select:-webkit-autofill:hover,
+body .sga-input-icon-group > select:-webkit-autofill:focus {
+  color: #ddd;
+  background-color: transparent !important;
+  -webkit-text-fill-color: #aa0;
+  -webkit-box-shadow: 0 0 0px 0px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+body .sga-input-icon-group {
+  border-color: #53575c;
+  background-color: #fff;
+}
+
+body .sga-input-icon-group > input,
+body .sga-input-icon-group > select {
+  color: rgb(22, 17, 17);
+}
+
+body .sga-input-icon-group > select:invalid {
+  color: #777;
+}
+
+body .sga-input-icon-group > select option {
+  background-color: #fff;
+}
+
+body .sga-input-icon-group > span {
+  color: rgb(15, 14, 14);
+}
+
+.sga-input-icon-group:before {
+  color: #999;
+  border-color: #777;
+}
+
+body .sga-input-icon-group.error {
+  border: 2px solid #f33;
+}
+
+body .sga-input-icon-group.error > input,
+body .sga-input-icon-group.error > select,
+body .sga-input-icon-group.error > span {
+  color: #555;
+}
+
+body .sga-input-icon-group.disabled {
+  color: #777;
+  border-color: #53575c;
+  background-color: #3d3e40;
+}
+
+body .sga-input-icon-group.disabled > input,
+body .sga-input-icon-group.disabled > select {
+  color: #777;
+}
+
+body .sga-input-icon-group.disabled:before {
+  color: #777;
+  border-color: #666;
+}

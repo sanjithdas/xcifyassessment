@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="page-culture" content="en-AU" langculture="en-AU" langcode="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test #2 - Colour Matching</title>
+
+    <link href="Contents/Styles/fontawesome-5.13.0/fontawesome.css" rel="stylesheet"/>
+	<link href="Contents/Styles/flag-icon/flag-icon.css" rel="stylesheet"/>
+	<link href="Contents/Styles/bootstrap/bootstrap.css" rel="stylesheet"/>
+	<link href="Contents/Styles/bootstrap/bootstrap.theme.robotic-1.0.0.css" rel="stylesheet"/>
+	<link href="Contents/Styles/bootstrap/bootstrap.theme.robotic.dark-1.0.0.css" rel="stylesheet"/>
+	<link href="Contents/Styles/xcify/xcify.guis-1.0.0.css" rel="stylesheet"/>
+	<link href="Contents/Styles/xcify/xcify.guis.bootstraps.dropdowns-1.0.0.css" rel="stylesheet"/>
+	<link href="Contents/Styles/xcify/xcify.guis.flag-icons-1.0.0.css" rel="stylesheet"/>
+	<link href="Contents/Styles/xcify/xcify.guis.inputicongroup-1.0.0.css" rel="stylesheet"/>
+	<link href="Contents/Styles/xcify/xcify.guis.inputicongroup.theme.robotic.dark-1.0.0.css" rel="stylesheet"/>
+	<link href="Contents/Styles/site.theme.robotic-1.0.0.css" rel="stylesheet"/>
+	<link href="Contents/Styles/site.theme.robotic.dark.state.loggedin-1.0.0.css" rel="stylesheet"/>
+	<link href="Contents/Styles/site.theme.robotic.dark-1.0.0.css" rel="stylesheet"/>
+	<link href="Contents/Styles/site.theme.robotic.mobile-1.0.0.css" rel="stylesheet"/>
+	<link href="Contents/Styles/site.theme.robotic.state.loggedin-1.0.0.css" rel="stylesheet"/>
+	
+    <link href="Contents/Styles/xcify/member/myprofile.theme.robotic-1.0.0.css" rel="stylesheet"/>
+	<link href="Contents/Styles/xcify/member/myprofile.theme.robotic.dark-1.0.0.css" rel="stylesheet"/>
+
+    <script src="Contents/Scripts/jquery/jquery-1.10.2.js"></script>
+	<script src="Contents/Scripts/bootstrap/bootstrap.bundle.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-1 d-none d-xl-block mt-3">
+                <div class="dropdown lang">
+                    <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span><i class="flag-icon flag-icon-us"></i></span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">
+                            <i class="flag-icon flag-icon-us flag-icon-bordered"></i><span>English</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="flag-icon flag-icon-id flag-icon-bordered"></i><span>Bahasa Indonesia</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 mt-3">
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <div class="balance-group">
+                            <div class="label">Balance</div>
+                            <div class="content">$ 5,250.25</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="balance-group">
+                            <div class="label">Rolling</div>
+                            <div class="content">$ 350.66</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="balance-group">
+                            <div class="label">Points</div>
+                            <div class="content">300,256</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 mt-4">
+                <div class="row m-0">
+                    <div class="col-2">
+                        <div class="dropdown no-arrow">
+                            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="Contents/Images/32/ic_transaction.png" alt="transaction">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a href="#" class="dropdown-item"><i class="fas fa-money-bill"></i><span>Deposit</span></a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-hand-holding-usd"></i><span>Withdraw</span></a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item"><i class="fas fa-donate"></i><span>Redeem Points</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="dropdown no-arrow" data-name="notifbutton">
+                            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="loadNotif(this)">
+                                <img src="Contents/Images/32/ic_notification.png" alt="notification">
+                                <span class="badge icon-menu d-none d-xl-block" data-name="notifbadge" data-badgecount="0">0</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right notifications-list">
+                                <div class="dropdown-item text-center">You are up to date</div>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item permanent"><span><i class="fas fa-bell"></i></span><span>See All Notifications</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-2">
+                        <a href="#">
+                            <img src="Contents/Images/32/ic_mail.png" alt="message">
+                            <span class="badge icon-menu d-none d-xl-block" data-name="mailbadge" data-badgecount="2">2</span>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="dropdown no-arrow">
+                            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="Contents/Images/32/ic_profile.png" , themeColor))" alt="profile">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a href="#" class="dropdown-item"><i class="fas fa-user"></i><span>My Profile</span></a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-chart-bar"></i><span>Reports</span></a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-users"></i><span>My Referrals</span></a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item red"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 username">BPanther</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2">
+                    <a href="/">
+                        <img src="Contents/Images/72/ic_logo.png" alt="star" class="img-fluid align-middle">
+                    </a>
+                </div>
+                <div class="col-xl-10">
+                    <ul>
+                        <li data-id="home">
+                            <a href="/">
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li data-id="1">
+                            <a href="/Game/ProviderLobby?MGId=1">
+                                <p>Sports</p>
+                            </a>
+                        </li>
+                        <li data-id="3">
+                            <a href="/Game/ProviderLobby?MGId=3">
+                                <p>Games</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Home/SHPage?MHId=1">
+                                <p>Promo</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Home/SHPage?MHId=2">
+                                <p>Info</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+		<div class="container mt-3">
+			<div class="row">
+				<div class="container-profileform col-xl-8">
+					<div class="d-flex">
+						<h2 class="mr-auto mb-0">My Profile</h2>
+						<button type="button" class="btn btn-robotic btn-primary" data-name="btnChangePwd">Change Password</button>
+					</div>
+					<hr />
+					<div class="title">My Account</div>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<label>First Name</label>
+							<div class="sga-input-icon-group" data-icon="&#xf007;">
+								<input type="text" data-name="firstname" maxlength="64" value="Budi" placeholder="First Name" />
+							</div>
+							<div class="errmsg"></div>
+						</div>
+						<div class="col-12 col-md-6">
+							<label>Last Name</label>
+							<div class="sga-input-icon-group" data-icon="&#xf007;">
+								<input type="text" data-name="lastname" maxlength="64" value="Antoso" placeholder="Last Name">
+							</div>
+							<div class="errmsg"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<div class="d-flex">
+								<label class="mr-auto">Email</label>
+								<span class="verifyaction" onclick="openEmailDlg()">Verify My Email</span>
+							</div>
+							<div class="sga-input-icon-group" data-icon="&#xf0e0;">
+								<input type="text" data-name="email" data-confirmed="true" maxlength="128" value="sam@xcify.com" placeholder="Email">
+							</div>
+							<div class="errmsg"></div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="d-flex">
+								<label class="mr-auto">Mobile Number</label>
+								<span class="verifyaction" onclick="openMobileDlg()">Verify My Mobile</span>
+							</div>
+							<div class="sga-input-icon-group" data-icon="&#xf87b;">
+								<span data-name="mobileprefix">+61</span>
+								<input type="text" data-name="mobile" data-confirmed="true" maxlength="16" value="811632879" placeholder="4xxxxxxxx">
+							</div>
+							<div class="errmsg"></div>
+						</div>
+					</div>
+
+					<div class="title">Your Bank</div>
+					<div class="row">
+						<div class="col-12">
+							<label>Bank</label>
+							<div class="sga-input-icon-group" data-icon="&#xf19c;">
+								<select data-name="banks" required>
+									<option value="1">Bank of Melbourne</option>
+									<option value="2">Bank of Queensland</option>
+									<option value="3">Bendigo Bank</option>
+									<option value="4">Commonwealth Bank of Australia</option>
+									<option value="5" selected>NAB</option>
+									<option value="6">Westpac</option>
+								</select>
+							</div>
+							<div class="errmsg"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<label>Account Name</label>
+							<div class="sga-input-icon-group" data-icon="&#xf007;">
+								<input type="text" data-name="accname" maxlength="64" value="Jack Bloggs" placeholder="Account Name" />
+							</div>
+							<div class="errmsg"></div>
+						</div>
+						<div class="col-12 col-md-6">
+							<label>Account Number</label>
+							<div class="sga-input-icon-group" data-icon="&#xf555;">
+								<input type="text" data-name="accnumber" maxlength="26" value="083-066 19877652" placeholder="Account Number" />
+							</div>
+							<div class="errmsg"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 d-flex justify-content-center">
+							<button class="btn btn-primary btn-robotic" data-name="btnSubmit">Submit</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-pointearned col-xl-4">
+					<h2>Point Earned</h2>
+					<hr />
+					<div class="timeline">
+						<div class="row">
+							<div class="content">
+								<div class="title">Confirm your email and receive 10.000 points</div>
+								<div class="desc">
+									<span class="success">Completed</span> <span>-</span> <span>2021-03-08</span> <span>2:11:07 PM</span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="content">
+								<div class="title">Confirm your mobile number and receive 100.000 points</div>
+								<div class="desc">
+									<span onclick="openMobileDlg(this)">Verify Now</span>
+								</div>
+							</div>
+						</div>
+						<div class="row completed">
+							<div class="content">
+								<div class="title">Total points to be approved</div>
+								<div class="desc">
+									<span>542.132</span> <span>points</span>
+								</div>
+							</div>
+						</div>
+						<div class="row completed">
+							<div class="content">
+								<div class="title">Total bonus to be approved</div>
+								<div class="desc">
+									<span>$ 0</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="h3">Game Providers</div>
+                    <div>Platforms</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

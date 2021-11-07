@@ -1,0 +1,46 @@
+﻿.container-pointearned > .timeline > .row::after {
+  background-color: rgb(245 154 71) !important;
+}
+
+.container-pointearned > .timeline > .row > .content::after {
+  background-color: rgb(245 154 71) !important;
+}
+
+.container-pointearned > .timeline > .row > .content > .title {
+  color: rgb(18 22 20) !important;
+}
+
+.container-pointearned > .timeline > .row > .content > .desc,
+.container-profileform .verifyaction {
+  color: rgb(16 18 17) !important;
+}
+
+.container-pointearned
+  > .timeline
+  > .row
+  > .content
+  > .desc
+  > span[onclick]:hover,
+.container-profileform .verifyaction:hover {
+  color: rgb(18 112 64) !important;
+}
+
+.container-pointearned > .timeline > .row > .content > .desc > .success {
+  color: #069629 !important;
+}
+
+.container-pointearned > .timeline > .row.completed::after {
+  background-color: #2f86a6 !important;
+}
+
+.container-pointearned > .timeline > .row.completed > .content::after {
+  background-color: #2f86a6 !important;
+}
+
+.container-pointearned > .timeline > .row.completed > .content > .desc {
+  color: rgb(7, 160, 71) !important;
+}
+
+.container-profileform .title {
+  color: rgb(25 142 137);
+}

@@ -1,0 +1,186 @@
+﻿@font-face {
+    font-family: Advanced-dot;
+    src: url(../Fonts/advanced_dot_digital-7.ttf);
+}
+
+@font-face {
+    font-family: Roboto-regular;
+    src: url(../Fonts/Roboto-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: Roboto-regular;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+}
+
+    body .badge {
+        font-size: 0.75em;
+    }
+
+    body .form-control {
+        height: unset;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+.body {
+    width: 100%;
+}
+
+hr:not([size]) {
+    height: 0.01rem;
+}
+
+textarea {
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown.lang {
+    padding: 0.3rem;
+}
+
+    .dropdown.lang > a {
+        font-size: 1rem;
+        text-decoration: none;
+    }
+
+        .dropdown.lang > a > span > i {
+            background-size: cover;
+            font-size: 1.25rem;
+            line-height: 1.65rem;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+        }
+
+    .dropdown.lang > .dropdown-menu > .dropdown-item {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+.footer {
+    margin-top: 1rem;
+}
+
+    .footer > .container > .row > div {
+        padding: 1rem;
+    }
+
+    .footer > .container > .row.provider > div {
+        padding: 0 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+        .footer > .container > .row.provider > div > img {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .footer > .container > .row.provider > div > span {
+            margin-right: 0.5rem;
+            font-weight: 700;
+            vertical-align: middle;
+        }
+
+    .footer hr {
+        margin-top: 0.2rem;
+        border: 0;
+        opacity: 0.25;
+        color: inherit;
+        background-color: currentColor;
+    }
+
+.hidden {
+    display: none;
+}
+
+.main-menu {
+    margin-top: 1rem;
+}
+
+    .main-menu > .container > .row > div:first-child {
+        text-align: center;
+    }
+
+    .main-menu > .container > .row > div:last-child {
+        text-align: right;
+    }
+
+    .main-menu ul {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+
+        .main-menu ul > li {
+            min-width: 6.25rem;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: inline-block;
+        }
+
+            .main-menu ul > li:hover {
+                background: rgb(111,72,31);
+                background: linear-gradient(180deg, rgba(111,72,31,1) 0%, rgba(166,134,86,1) 35%, rgba(232,210,156,0.1) 100%);
+                transition: 0.5s;
+            }
+
+            .main-menu ul > li > a {
+                text-decoration: none;
+            }
+
+                .main-menu ul > li > a::after {
+                    height: 0;
+                    line-height: 0;
+                    content: '\00a0';
+                    display: block;
+                }
+
+            .main-menu ul > li > a > p {
+                margin: 0.25rem 0 0 0;
+            }
+
+.top-menu {
+    display: none;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 999;
+    border-radius: 0 0 5px 5px
+}
+
+    .top-menu > .row > div {
+        margin: 0;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+        .top-menu > .row > div > a {
+            text-decoration: none;
+        }
+
+            .top-menu > .row > div > a > p:first-child {
+                width: 14.125rem;
+                margin: 0.5rem 1rem;
+                border-radius: 10px;
+            }
+
+            .top-menu > .row > div > a > p > img {
+                width: 11.25rem;
+                height: 6.25rem;
+                object-fit: none;
+            }

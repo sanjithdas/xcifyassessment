@@ -1,0 +1,18 @@
+﻿.badge.icon-menu {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.balance-group {
+  background-color: #fff;
+  border-color: #53575a;
+}
+
+.balance-group > .label {
+  color: #0d0d0e;
+}
+
+.balance-group > .content {
+  color: rgb(68 190 185);
+  font-weight: bold;
+}

@@ -1,0 +1,115 @@
+﻿#dlgPwd label {
+    color: #fff;
+}
+
+#dlgPwd .btn {
+    min-width: 8.8rem;
+}
+
+#dlgPwd .row > .col-12 {
+    margin: 0.65rem auto;
+}
+
+.container > hr {
+    margin-bottom: 1.5rem;
+}
+
+.container-pointearned > .timeline {
+    padding: 1.5rem 1rem 0;
+    border: 1px solid #53575a;
+    border-radius: 0.25rem;
+}
+
+    .container-pointearned > .timeline > .row {
+        position: relative;
+        margin: 0;
+    }
+
+        .container-pointearned > .timeline > .row::after {
+            position: absolute;
+            width: 0.1rem;
+            top: 0rem;
+            bottom: 0;
+            left: 0.32rem;
+            content: '';
+            background-color: #fff;
+        }
+
+        .container-pointearned > .timeline > .row:first-child::after {
+            top: 0.3rem;
+        }
+
+        .container-pointearned > .timeline > .row:last-child::after {
+            height: 0.3rem;
+        }
+
+        .container-pointearned > .timeline > .row > .content {
+            position: relative;
+            padding: 0rem 0 3rem 1.5rem;
+        }
+
+            .container-pointearned > .timeline > .row > .content::after {
+                position: absolute;
+                width: 0.75rem;
+                height: 0.75rem;
+                top: 0.25rem;
+                left: 0;
+                content: '';
+                background-color: #fff;
+                border-radius: 50%;
+                z-index: 1;
+            }
+
+            .container-pointearned > .timeline > .row > .content > .title {
+                font-size: 1rem;
+                line-height: 1.4rem;
+            }
+
+            .container-pointearned > .timeline > .row > .content > .desc {
+                font-size: 0.9rem;
+            }
+
+                .container-pointearned > .timeline > .row > .content > .desc > .success {
+                    font-weight: 500;
+                }
+
+        .container-pointearned > .timeline > .row:last-child > .content {
+            padding-bottom: 1.8rem;
+        }
+
+.container-profileform label {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.container-profileform .btn[data-name="btnChangePwd"] {
+    height: 2rem;
+    min-width: 9rem;
+    margin: 0;
+    padding: 0.1rem 1rem;
+    border-radius: 0.45rem !important;
+    font-size: 0.9rem;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.container-profileform .btn[data-name="btnSubmit"] {
+    width: 50%;
+    min-width: 6rem;
+    margin: auto auto;
+}
+
+.container-profileform .title {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.container-profileform .verifyaction {
+    font-size: 0.8rem;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.container-profileform > .row > .col-12 {
+    margin-bottom: 1.25rem;
+}

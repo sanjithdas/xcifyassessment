@@ -1,0 +1,50 @@
+@-moz-document url-prefix() {
+    select {
+        padding-top: 4px;
+    }
+}
+
+select {
+    padding-left: 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    border-radius: 0.25rem;
+}
+
+    select:disabled {
+        color: #888;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    }
+
+    select::-ms-expand { /*For hide arrow in IE*/
+        display: none;
+    }
+
+    select:invalid {
+        color: #888;
+    }
+
+        select:invalid option {
+            color: #222;
+        }
+
+    select.font-awesome {
+        font-family: 'Font Awesome 5 Free', apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        font-weight: 600;
+    }
+
+span[onclick] {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+textarea.not-expandable {
+    resize: none;
+}
